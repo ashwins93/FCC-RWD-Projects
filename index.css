@@ -150,6 +150,17 @@ header .tagline {
   flex-grow: 1;
 }
 
+/* Links */
+#tribute-link {
+  display: inline-block;
+  padding: 20px 2%;
+  text-decoration: none;
+  color: #0077ff;
+}
+#tribute-link:hover {
+  color: #ff8800;
+}
+
 /* Responsive Web Design */
 @media only screen and (max-width: 400px) {
   .timeline .event {
