@@ -56,3 +56,67 @@ table {
 * {
   box-sizing: border-box;
 }
+
+/* General Styles */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(to right, black, #232323);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+header h1 {
+  font-size: 3.6rem;
+  font-weight: 100;
+  line-height: 4.4rem;
+}
+header .tagline {
+  line-height: 2.2rem;
+  font-size: 1.8rem;
+}
+
+/* Image section */
+#img-div {
+  margin: 44px 0;
+  position: relative;
+}
+
+#image {
+  width: 100%;
+  max-width: 1024px;
+  display: block;
+  height: auto;
+  /* border-radius: 15px; */
+}
+
+#img-caption {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 10px;
+  color: white;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 1.8rem;
+  /* border-radius: 0 0 15px 15px; */
+}
+
+/* Article */
+#tribute-info {
+  background: white;
+}
