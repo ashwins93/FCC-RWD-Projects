@@ -1,0 +1,173 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <div class="container">
+    <h1 id="title">
+      FCC Survey Form
+    </h1>
+
+    <p id="description">
+      Thank you for choosing our product. Please spend a few minutes in taking
+      our short survey to help us understand you better.
+    </p>
+
+    <p></p>
+
+    <form id="survey-form" action="#">
+      <fieldset class="f-set">
+        <h2>
+          <span class="material-icons">
+            person
+          </span>
+          <span>About You</span>
+        </h2>
+
+        <div class="f-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            class="f-input"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        <div class="f-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="f-input"
+            placeholder="Your email"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <fieldset class="f-set">
+        <h2>
+          <span class="material-icons">
+            rate_review
+          </span>
+          <span>Your opinion on our product</span>
+        </h2>
+
+        <div class="f-group">
+          <label id="number-label" for="number"
+            >On a scale of 1-10 how likely are you to recommend our
+            product.</label
+          >
+          <input
+            id="number"
+            name="rating"
+            class="f-input"
+            placeholder="1-10"
+            required
+            type="number"
+            min="1"
+            max="10"
+          />
+        </div>
+
+        <div class="f-group">
+          <label for="feature"
+            >What did you like the most about our product?</label
+          >
+          <select id="dropdown" class="f-select">
+            <option>Please select an option</option>
+            <option>Design</option>
+            <option>Functionality</option>
+            <option>Durability</option>
+            <option>Quality</option>
+          </select>
+        </div>
+
+        <div class="f-group">
+          <label>Would you say our product made you happy?</label>
+
+          <div class="f-radio-group">
+            <input name="happy" type="radio" id="st-agree" value="st-agree" />
+            <label for="st-agree">Strongly Agree</label>
+          </div>
+          <div class="f-radio-group">
+            <input name="happy" type="radio" id="agree" value="agree" />
+            <label for="agree">Agree</label>
+          </div>
+          <div class="f-radio-group">
+            <input name="happy" type="radio" id="neutral" value="neutral" />
+            <label for="neutral">Neutral</label>
+          </div>
+          <div class="f-radio-group">
+            <input name="happy" type="radio" id="disagree" value="disagree" />
+            <label for="disagree">Disgree</label>
+          </div>
+          <div class="f-radio-group">
+            <input
+              name="happy"
+              type="radio"
+              id="st-disagree"
+              value="st-disagree"
+            />
+            <label for="st-disagree">Strongly Disagree</label>
+          </div>
+        </div>
+
+        <div class="f-group">
+          <label
+            >How can we make our product better? (Select all that apply)</label
+          >
+          <div class="f-check-group">
+            <input id="features" type="checkbox" value="features" />
+            <span></span>
+            <label for="features">More features</label>
+          </div>
+          <div class="f-check-group">
+            <input id="build" type="checkbox" value="build" />
+            <span></span>
+            <label for="build">Better build</label>
+          </div>
+          <div class="f-check-group">
+            <input id="sales" type="checkbox" value="sales" checked />
+            <span></span>
+            <label for="sales">After sales service</label>
+          </div>
+          <div class="f-check-group">
+            <input id="pricing" type="checkbox" value="pricing" />
+            <span></span>
+            <label for="pricing">Lower pricing</label>
+          </div>
+        </div>
+
+        <div class="f-group">
+          <label for="comments">Any comments or feedback?</label>
+          <textarea
+            rows="6"
+            class="f-input"
+            placeholder="We'd love your input"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <div class="submit-btn">
+        <button class="f-button" id="submit">
+          <span>
+            Submit
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
